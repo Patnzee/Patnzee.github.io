@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.Navbar {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.Navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.Navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Header Video Section */
+.Intro_Video_Section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.Intro_Background_Video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.Intro_Text_Overlay {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+}
+
+/* Grid Container */
+.Grid_Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Grid Items */
+.Grid_Item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.Grid_Item:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Styling */
+.Grid_Item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.Grid_Item img:hover {
+  transform: scale(1.05);
+}
+
+/* Profile Image */
+.Profile_Img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+}
+
+/* Text Paragraphs */
+.Grid_Item p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+
+footer a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

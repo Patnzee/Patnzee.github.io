@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patnzee Academy Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="Navbar">
+    <a href="#about">About</a>
+    <a href="#github">GitHub</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Video Header Section -->
+  <div class="Intro_Video_Section">
+    <video autoplay muted loop class="Intro_Background_Video">
+      <source src="optimized_images/data-center.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <div class="Intro_Text_Overlay">
+      <h1>PATNZEE ACADEMY PORTFOLIO</h1>
+      <p><em>"Each website I build is a step forward in my journey to becoming a better developer." – Patricia SN Nzimande</em></p>
+      <p>Welcome to my portfolio website. On it, I’ll share my background, what I’ve learned, and how I’m growing as a developer.</p>
+      <p>Thank you for stopping by — enjoy!</p>
+    </div>
+  </div>
+
+  <!-- Grid Blocks -->
+  <div class="Grid_Container">
+
+    <!-- Grid Block 1 -->
+    <div class="Grid_Item">
+      <img src="optimized_images/image1.png" alt="Coding Setup">
+      <p>Hello, my name is Patricia SN Nzimande. I’m an aspiring web developer with a passion for learning and growth.</p>
+    </div>
+
+    <!-- Grid Block 2 -->
+    <div class="Grid_Item" id="about">
+      <img src="optimized_images/patricia.png" alt="Patricia SN Nzimande" class="Profile_Img">
+      <h2>ABOUT</h2>
+      <p>My journey began recently and has been both challenging and exciting.</p>
+    </div>
+
+    <!-- Grid Block 3 -->
+    <div class="Grid_Item">
+      <img src="optimized_images/image3.png" alt="Tech Space">
+      <p>I’ve learned HTML, CSS, Git, GitHub, VS Code, Formspree and CSS Grid. This portfolio is a reflection of what I’ve gained.</p>
+    </div>
+
+    <!-- GitHub Info -->
+    <div class="Grid_Item" id="github">
+      <h2>GITHUB</h2>
+      <p>You can view my projects here:</p>
+      <a href="https://github.com/Patnzee" target="_blank">
+        <img src="optimized_images/github.png" alt="GitHub Logo" style="max-width: 150px;">
+      </a>
+      <p><a href="https://github.com/Patnzee" target="_blank">Visit my GitHub Profile</a></p>
+    </div>
+
+    <!-- Contact Image -->
+    <div class="Grid_Item">
+      <img src="optimized_images/contact.png" alt="Contact Icons">
+      <p class="center">Feel free to reach out via email, phone, or this form.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="Grid_Item" id="contact">
+      <h2>CONTACT</h2>
+      <form action="https://formspree.io/f/mblylgzb" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required placeholder="Enter your email">
+        <label for="message">Message:</label>
+        <textarea name="message" rows="4" required placeholder="Type your message here..."></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="center">
+    <p>&copy; 2025 Patricia SN Nzimande | <a href="https://thetechacademy.com" target="_blank">The Tech Academy</a></p>
+  </footer>
+
+</body>
+</html>
